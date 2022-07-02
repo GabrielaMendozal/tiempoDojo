@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Forecast</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <nav>
+            <h1>DojoWeather</h1>
+            <ul class="city">
+                <li onclick="mensaje()">
+                    Burbank
+                </li>
+                <li onclick="mensaje()">
+                    Chicago
+                </li>
+                <li onclick="mensaje()">
+                    Dallas
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="container">
+                <div class="encabezado">
+                    <h2>
+                        San Jose
+                    </h2>
+                    <ul>
+                        <li>
+                            show temperature in
+                        </li>
+                        <li>
+                            <select name="" id="">
+                                <option value="">
+                                    °C
+                                </option>
+                                <option value="">
+                                    °F
+                                </option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <div class="days">
+                    <div class="today">
+                        <h4>
+                            Today
+                        </h4>
+                        <img class="clima" src="./assets/some_rain.png" alt="imagen del clima">
+                        <p>some rain</p>
+                        <p>24</p>
+                        <p>18</p>
+                    </div>
+                    <div class="tomorrow">
+                        <h4>
+                            Tomorrow
+                        </h4>
+                        <img class="clima" src="./assets/some_sun.png" alt="imagen del clima">
+                        <p>some sun</p>
+                        <p>27</p>
+                        <p>19</p>
+                    </div>
+                    <div class="friday">
+                        <h4>
+                            Friday
+                        </h4>
+                        <img class="clima" src="./assets/some_clouds.png" alt="imagen del clima">
+                        <p>some clouds</p>
+                        <p>21</p>
+                        <p>16</p>
+                    </div>
+                    <div class="saturday">
+                        <h4>
+                            Saturday
+                        </h4>
+                        <img class="clima" src="./assets/some_sun.png" alt="imagen del clima">
+                        <p>some sun</p>
+                        <p>26</p>
+                        <p>21</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="cookie">
+            <img src="./assets/cookie.png" alt="cookie">
+            <div>
+                <p>
+                    Stop! Cookie time
+                </p>
+                <p>
+                    We use cookies (sadly not the edible ones) to personalize content and ads, 
+                    to provide social media features and to analyse our traffic            
+                    <a href="#">
+                        Read more...
+                    </a>
+                </p>
+            </div>
+            <button  onclick="definition(this)">
+                I Accept
+            </button>
+        </footer>
+        <script src="./index.js"></script>
+    </body>
+</html>

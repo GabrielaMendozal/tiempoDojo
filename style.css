@@ -1,0 +1,42 @@
+nav{
+    background-color: rgb(142, 218, 248);
+    display: flex;
+    justify-content: space-around;
+}
+
+.city{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.encabezado{
+    display: flex;
+}
+
+.days {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.today, .tomorrow, .friday, .saturday{
+    background-color: rgb(218, 216, 216);
+}
+
+.cookie{
+    display: flex;
+    align-items: center;
+}
+
+.clima{
+    border-radius: 50%;
+    width: 50%;
+}
+
+footer{
+    border:2px solid black;
+    justify-content: space-around;
+    background-color: rgb(218, 216, 216);
+    
+}
