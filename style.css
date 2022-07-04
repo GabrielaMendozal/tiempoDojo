@@ -1,17 +1,27 @@
+*{
+    font-family: sans-serif;
+}
+
 nav{
     background-color: rgb(142, 218, 248);
     display: flex;
     justify-content: space-around;
+    color: white;
 }
 
 .city{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+}
+
+.temperature{
+    list-style: none;
+    display: flex;
 }
 
 .encabezado{
     display: flex;
+    justify-content: space-around;
 }
 
 .days {
@@ -22,6 +32,7 @@ nav{
 
 .today, .tomorrow, .friday, .saturday{
     background-color: rgb(218, 216, 216);
+    text-align: center;
 }
 
 .cookie{
@@ -38,5 +49,19 @@ footer{
     border:2px solid black;
     justify-content: space-around;
     background-color: rgb(218, 216, 216);
+    margin: 1%;
     
+}
+
+.grados{
+    display: flex;
+    justify-content: space-around;
+}
+
+.max{
+    color: red;
+}
+
+.min{
+    color: blue;
 }

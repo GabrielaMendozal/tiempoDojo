@@ -9,18 +9,18 @@
     </head>
     <body>
         <nav>
-            <h1>DojoWeather</h1>
-            <ul class="city">
-                <li onclick="mensaje()">
-                    Burbank
-                </li>
-                <li onclick="mensaje()">
-                    Chicago
-                </li>
-                <li onclick="mensaje()">
-                    Dallas
-                </li>
-            </ul>
+            <h1>
+                DojoWeather
+            </h1>
+            <p class="city" onclick="mensaje()">
+                Burbank
+            </p>
+            <p class="city" onclick="mensaje()">
+                Chicago
+            </p>
+            <p class="city" onclick="mensaje()">
+                Dallas
+            </p>        
         </nav>
         <main>
             <div class="container">
@@ -28,16 +28,16 @@
                     <h2>
                         San Jose
                     </h2>
-                    <ul>
+                    <ul class="temperature">
                         <li>
                             show temperature in
                         </li>
                         <li>
-                            <select name="" id="">
-                                <option value="">
+                            <select  id="temperatureSelect" >
+                                <option value="C">
                                     °C
                                 </option>
-                                <option value="">
+                                <option value="F">
                                     °F
                                 </option>
                             </select>
@@ -51,8 +51,10 @@
                         </h4>
                         <img class="clima" src="./assets/some_rain.png" alt="imagen del clima">
                         <p>some rain</p>
-                        <p>24</p>
-                        <p>18</p>
+                        <div class="grados">
+                            <p class="temperature max">24°</p>
+                            <p class="temperature min">18°</p>
+                        </div>
                     </div>
                     <div class="tomorrow">
                         <h4>
@@ -60,8 +62,10 @@
                         </h4>
                         <img class="clima" src="./assets/some_sun.png" alt="imagen del clima">
                         <p>some sun</p>
-                        <p>27</p>
-                        <p>19</p>
+                        <div class="grados">
+                            <p class="temperature max">27°</p>
+                            <p class="temperature min">19°</p>
+                        </div>
                     </div>
                     <div class="friday">
                         <h4>
@@ -69,8 +73,10 @@
                         </h4>
                         <img class="clima" src="./assets/some_clouds.png" alt="imagen del clima">
                         <p>some clouds</p>
-                        <p>21</p>
-                        <p>16</p>
+                        <div class="grados">
+                            <p class="temperature max">21°</p>
+                            <p class="temperature min">16°</p>
+                        </div>
                     </div>
                     <div class="saturday">
                         <h4>
@@ -78,8 +84,10 @@
                         </h4>
                         <img class="clima" src="./assets/some_sun.png" alt="imagen del clima">
                         <p>some sun</p>
-                        <p>26</p>
-                        <p>21</p>
+                        <div class="grados">
+                            <p class="temperature max">26°</p>
+                            <p class="temperature min">21°</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,9 +95,11 @@
         <footer class="cookie">
             <img src="./assets/cookie.png" alt="cookie">
             <div>
-                <p>
-                    Stop! Cookie time
-                </p>
+                <h4>
+                    <span>
+                        Stop! Cookie time
+                    </span>
+                </h4>
                 <p>
                     We use cookies (sadly not the edible ones) to personalize content and ads, 
                     to provide social media features and to analyse our traffic            
@@ -98,7 +108,7 @@
                     </a>
                 </p>
             </div>
-            <button  onclick="definition(this)">
+            <button  onclick="closeCookie()">
                 I Accept
             </button>
         </footer>
